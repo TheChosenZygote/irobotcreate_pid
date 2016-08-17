@@ -12,5 +12,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(irobotcreate_pid_node irobotcreate_pid_node.cpp)
-target_link_libraries(irobotcreate_pid_node ${catkin_LIBRARIES})
+add_executable(pid_control_node src/pid_control_node.cpp)
+add_executable(pid_control_node2 src/pid_control_node2.cpp)
+add_executable(pid_control_node3 src/pid_control_node3.cpp)
+target_link_libraries(pid_control_node ${catkin_LIBRARIES})
+target_link_libraries(pid_control_node2 ${catkin_LIBRARIES})
+target_link_libraries(pid_control_node3 ${catkin_LIBRARIES})
