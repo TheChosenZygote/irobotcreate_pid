@@ -8,8 +8,11 @@ Create a catkin workspace
 
 ```
 $ mkdir -p pid_control_ws/src  
-$ cd pid_control_ws  
-$ catkin init  
+$ cd pid_control_ws/src  
+$ catkin_init_workspace  
+$ cd pid_control_ws/
+$ catkin_make
+$ source devel/setup.bash
 ```
 
 In pid_control_ws/src, clone this repo  
@@ -28,7 +31,7 @@ $ rosdep install --from-paths src -i
 Build  
 
 ```
-$ catkin make  
+$ catkin_make  
 ```
 
 Source  
