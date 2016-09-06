@@ -4,38 +4,45 @@ This is a pid controller for waypoints for the iRobot Create using ROS. Make sur
 
 ## Installation
 
-Create a catkin workspace
-	```
-	$ mkdir -p pid_control_ws/src
-	$ cd pid_control_ws
-	$ catkin init
-	```
+Create a catkin workspace  
 
-In pid_control_ws/src, clone this repo
-	```
-	$ git clone https://github.com/TheChosenZygote/irobotcreate_pid
-	```
-Install dependencies
-	```
-	$ rosdep update
-	$ rosdep install --from-paths src -i
-	```
+```
+$ mkdir -p pid_control_ws/src  
+$ cd pid_control_ws  
+$ catkin init  
+```
 
-Build
-	```
-	$ catkin make
-	```
+In pid_control_ws/src, clone this repo  
 
-Source
-	```
-	$ source ~/"workspace name"/devel/setup.bash
-	```
+```
+$ git clone https://github.com/TheChosenZygote/irobotcreate_pid
+```
+
+Install dependencies  
+
+```
+$ rosdep update  
+$ rosdep install --from-paths src -i  
+```
+
+Build  
+
+```
+$ catkin make  
+```
+
+Source  
+
+```
+$ source ~/"workspace name"/devel/setup.bash  
+```
 
 ## Running
 
-Make sure you have Gazebo running and make sure you have the iRobot spawned in the map. Then run the pid controller
-	```
-	rosrun irobotcreate_pid pid_control_node2
-	```
+Make sure you have Gazebo running and make sure you have the iRobot spawned in the map. Then run the pid controller  
+
+```
+rosrun irobotcreate_pid pid_control_node2  
+```
 
 You can adjust, add, and remove waypoints accordingly by going into the pid_control_node2.cpp file and manipulating them. Just make sure you make the workspace after every edit.
